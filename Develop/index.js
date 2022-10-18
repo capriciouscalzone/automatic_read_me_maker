@@ -6,9 +6,22 @@ const fs = require('fs')
 // TODO: Create an array of questions for user input
 const gernerateReadMe = ({ title, description, instructions, usage, contribution, test, license, questions, email, }) =>
 
-`   ## project: ${title}
-    
-              
+`### Table of Contents
+[Project Title]()
+[Description]()
+[Insallation Instructions]()
+[Usage Information]()
+[Contribution guidelines]()
+[Test Instructions]()
+[License Type]()
+[Git hub username]()
+[Email]()
+
+
+
+
+    ## project: ${title}
+        
     ## description: ${description}  
     
     
