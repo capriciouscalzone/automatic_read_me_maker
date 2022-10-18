@@ -4,42 +4,104 @@ const inquirer = require('inquirer')
 const fs = require('fs')
 
 // TODO: Create an array of questions for user input
-const gernerateReadMe = ({ title, description, instructions, usage, contribution, test, license, questions, email, }) =>
+const gernerateReadMe = ({ title, description, instructions, usage, contribution, test, license, github, email, }) =>
 
-`### Table of Contents
-[Project Title]()
-[Description]()
-[Insallation Instructions]()
-[Usage Information]()
-[Contribution guidelines]()
-[Test Instructions]()
-[License Type]()
-[Git hub username]()
-[Email]()
-
-
+`# Table of Contents
+1. [Project Title](#project-title)
+2. [Description](#description)
+3. [Insallation Instructions](#installation-instructions)
+4. [Usage Information](#usage-information)
+5. [Contribution guidelines](#contribution-guidelines)
+6. [Test Instructions](#test-instructions)
+7. [License Type](#license-type)
+8. [Git hub username](#git-hub-username)
+9. [Email](#email)
 
 
-    ## project: ${title}
+
+
+
+
+
+
+
+## Project Title
+    
+    ### ${title}
+
+
+
         
-    ## description: ${description}  
+## Description 
+     
+    ### ${description}  
+
+
+
+
     
     
-    ## installation instructions: ${instructions}
+## Installation instructions 
+     
+    ### ${instructions}
+
+
+
+
+
         
-       
-    ## usage information: ${usage}
+   
+## Usage information 
+     
+    ### ${usage}
+
+
+
+
+
         
-    ## contribution guidelines: ${contribution}  
+## Contribution guidelines 
+     
+    ### ${contribution}  
+
+
+
+
+
+
         
-    ## test instructions: ${test}  
+## Test instructions 
+     
+    ### ${test}  
+
+
+
+
+
     
+## License type 
+     
+    ### ${license}   
+
+
+
+
+
+
     
-    ## License type: ${license}   
+## Git hub username 
+     
+    ### ${github}
+
+
+
+
+
+
     
-    ## Git hub username: ${questions}
-    
-    ## Email for more info: ${email}`;
+## Email 
+     
+    ### ${email}`;
 
     inquirer
     .prompt ([
@@ -85,7 +147,7 @@ const gernerateReadMe = ({ title, description, instructions, usage, contribution
             type: 'input'
         },
         {
-            name: 'questions',
+            name: 'github',
             message: 'enter your github username',
             type:'input'
         },
