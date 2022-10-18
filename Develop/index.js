@@ -80,3 +80,16 @@ const gernerateReadMe = ({ title, description, instructions, usage, contribution
              message: 'enter email',
              type: 'input'
     },
+
+]).then(data => {
+    const html = gernerateReadMe(data);
+    console.log(html);
+    fs.writeFile('README.md', html, (err) => {
+        if(err) {
+            console.log(err);
+
+        } else {
+            console.log('success!')
+        }
+    } )
+});
