@@ -4,13 +4,26 @@ const inquirer = require('inquirer')
 const fs = require('fs')
 
 // TODO: Create an array of questions for user input
-const questions = [];
+const gernerateReadMe = ({ title, description, instructions, usage, contribution, test, license, questions, email, }) =>
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+`   ## project: ${title}
+    
+              
+    ## description: ${description}  
+    
+    
+    ## installation instructions: ${instructions}
+        
+       
+    ## usage information: ${usage}
+        
+    ## contribution guidelines: ${contribution}  
+        
+    ## test instructions: ${test}  
+    
+    
+    ## License type: ${license}   
+    
+    ## Git hub username: ${questions}
+    
+    ## Email for more info: ${email}`;
