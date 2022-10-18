@@ -27,14 +27,14 @@ const gernerateReadMe = ({ title, description, instructions, usage, contribution
 
 ## Project Title
     
-    ### ${title}
+     ${title}
 
 
 
         
 ## Description 
      
-    ### ${description}  
+     ${description}  
 
 
 
@@ -43,7 +43,7 @@ const gernerateReadMe = ({ title, description, instructions, usage, contribution
     
 ## Installation instructions 
      
-    ### ${instructions}
+     ${instructions}
 
 
 
@@ -53,7 +53,7 @@ const gernerateReadMe = ({ title, description, instructions, usage, contribution
    
 ## Usage information 
      
-    ### ${usage}
+     ${usage}
 
 
 
@@ -62,7 +62,7 @@ const gernerateReadMe = ({ title, description, instructions, usage, contribution
         
 ## Contribution guidelines 
      
-    ### ${contribution}  
+     ${contribution}  
 
 
 
@@ -72,7 +72,7 @@ const gernerateReadMe = ({ title, description, instructions, usage, contribution
         
 ## Test instructions 
      
-    ### ${test}  
+     ${test}  
 
 
 
@@ -81,7 +81,7 @@ const gernerateReadMe = ({ title, description, instructions, usage, contribution
     
 ## License type 
      
-    ### ${license}   
+     ${license}   
 
 
 
@@ -91,7 +91,7 @@ const gernerateReadMe = ({ title, description, instructions, usage, contribution
     
 ## Git hub username 
      
-    ### ${github}
+     ${github}
 
 
 
@@ -101,7 +101,7 @@ const gernerateReadMe = ({ title, description, instructions, usage, contribution
     
 ## Email 
      
-    ### ${email}`;
+     ${email}`;
 
     inquirer
     .prompt ([
