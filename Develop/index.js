@@ -144,7 +144,8 @@ const gernerateReadMe = ({ title, description, instructions, usage, contribution
         {
             name: 'license',
             message: 'which license are you using',
-            type: 'input'
+            type: 'list',
+            choices:['MIT','GNU','BSD','Apache',]
         },
         {
             name: 'github',
